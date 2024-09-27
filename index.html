@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        input[type="number"] {
+            padding: 10px;
+            font-size: 16px;
+            margin: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Guess the Number Game</h1>
+    <p>I am thinking of a number between 1 and 100. Can you guess it?</p>
+    <input type="number" id="guess" placeholder="Enter your guess">
+    <button onclick="checkGuess()">Submit Guess</button>
+    
+    <div class="result" id="result"></div>
+
+    <script src="game.js"></script>
+
+</body>
+</html>
